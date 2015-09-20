@@ -1,0 +1,43 @@
+{
+    "governingPartyList": 
+    [
+        {
+            "name": "Fine Gael",
+            "colour": "#0087c3",
+            "seats": 76
+        },
+        {
+            "name": "Labour",
+            "seats": 37,
+            "colour": "#BF1D24"
+        }
+    ],
+    "oppositionPartyList":
+    [
+        {
+            "name": "Fianna Fáil",
+            "colour": "#92D17D",
+            "seats": 20
+        },
+        {
+            "name": "Sinn Féin",
+            "seats": 14,
+            "colour": "#299131"
+        },
+        {
+            "name": "Others",
+            "seats": 15,
+            "colour": "gret"
+        },
+        {
+            "name": "Socialist Party",
+            "seats": 2,
+            "colour": "green"
+        },
+        {
+            "name": "People Before Profit",
+            "seats": 2,
+            "colour": "green"
+        }
+    ]
+}

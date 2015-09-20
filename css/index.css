@@ -1,0 +1,131 @@
+/* background image credit: http://www.tumblr.com/tagged/tile-background -> http://tsukuyomiii.tumblr.com/ */
+body{
+    background: url('../images/tile.jpg');
+    font-family: sans-serif;}
+.node{
+    
+    z-index: 10;
+}
+.node circle {
+    stroke: #000000;
+    stroke-width: 1px;
+}
+
+.node circle:hover
+{
+    stroke-width: 5px;
+    stroke: grey;
+}
+
+.node text {
+    font: 30px sans-serif;
+    pointer-events: none;
+    text-anchor: middle;
+}
+
+line.link {
+    fill: none;
+    stroke: black;
+    stroke-width: 3px;
+}
+.node text.seatsText
+{
+    stroke: #000000;
+    stroke-width: 1px;
+}
+
+.toggler { width: 500px; height: 200px; }
+
+.groupLabel
+{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    display: none;
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 70px;
+    font-size: 2em;
+}
+.groupLabel.opp
+{
+    margin-left: 610px;
+}
+
+.partyName
+{
+    display: none;
+    text-align: center;
+    font-size: 1.25em;
+    position: absolute;
+    width: 200px;
+    margin-left: 350px;
+    margin-top: 250px;
+}
+
+select
+{
+    z-index: 10;
+    position: relative;
+    display: block;
+    width: 120px;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -60px;
+}
+
+#barChartArea, #seatsLabel
+{
+    width: 150px;
+}
+#barChartArea
+{
+    z-index: -5;
+    margin: -350px auto 0 auto;
+    height: 300px;
+    border-bottom: 2px solid grey;
+    position: relative;
+}
+#barChartArea .bar
+{
+    width: 50px;
+    float: left;
+    position: relative;
+    background: orange;
+    bottom: 0px;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 5px 2px 5px #888888;
+}
+
+#barChartArea .bar#govBar
+{
+    margin-left: 15px;
+}
+
+#barChartArea .bar#oppBar
+{
+    margin-right: 15px;
+    float: right;
+    right: 0px;
+    height: 120px
+}
+
+#barChartArea .bar .seatValue
+{
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    display: block;
+    margin: -23px auto 0 auto;
+}
+#seatsLabel
+{
+    text-align: center;
+    margin: 0 auto -25px auto;
+    bottom: 0px;
+    position: absolute;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="js/libs/jquery-1.9.0/jquery.min.js" type="text/javascript"></script>
+        <script src="js/libs/d3-3.0.1/d3.v3.min.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <script src="js/index.js" type="text/javascript"></script>
+        <title>Irish Election Statistics</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <span style="width: 480px; font-size: 50px; line-height: 50px; display: block; height: 50px; margin: 50px auto 50px auto;font-family: sans-serif">Irish Election Results</span>
+        <div style="width: 900px; margin: 0 auto;">
+            <select id="yearSelector" onchange="changeYear();">
+            </select>
+
+            <span class="groupLabel gov">Government</span>
+            <span class="groupLabel opp">Opposition</span>
+            <span class="partyName"></span>
+            
+            <svg id="canvas" 
+                 style="width: 900px; height: 600px; margin-left: auto; margin-right: auto;">
+                <defs>
+                    <filter id="dropShadow" x="0" y="0" width="110%" height="110%">
+                        <feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+                        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="5" />
+                        <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                    </filter>
+                    <filter id="bevel" filterUnits="objectBoundingBox" x="-10%" y="-10%" width="150%" height="150%">
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur"/>
+                        <feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.5" specularExponent="10" result="specOut" lighting-color="white">
+                                <fePointLight x="-5000" y="-10000" z="20000"/>
+                        </feSpecularLighting>
+                        <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut2"/>
+                    <feComposite in="SourceGraphic" in2="specOut2" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
+                    </filter>
+                </defs>
+            </svg>
+            
+            <div id="barChartArea">
+                <div class="bar" id="govBar">
+                    <span id="govSeats" class="seatValue">100</span>
+                </div>
+                <div class="bar" id="oppBar">
+                    <span id="oppSeats" class="seatValue">70</span>
+                </div>
+                <span id="seatsLabel">Seats</span>
+            </div>
+            
+        </div>
+        <script>
+            init();
+        </script>
+    </body>
+</html>

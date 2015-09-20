@@ -1,0 +1,153 @@
+{
+    "elections":
+    [
+        {
+            "year":   2011,
+            "governmentParties":   
+            [
+                {
+                    "code": "FG",
+                    "seats" : 76
+                },
+                {
+                    "code": "L",
+                    "seats" : 37
+                }
+            ],
+            "oppositionParties":
+            [
+                {
+                    "code": "FF",
+                    "seats" : 20 
+                },
+                {
+                    "code": "SF",
+                    "seats" : 14
+                },
+                {
+                    "code": "O",
+                    "seats" : 15
+                },
+                {
+                    "code": "SP",
+                    "seats" : 2
+                },
+                {
+                    "code": "PBP",
+                    "seats" : 2
+                }
+            ]
+        },
+        {
+            "year":   2007,
+            "governmentParties":   
+            [
+                {
+                    "code": "FF",
+                    "seats" : 78
+                },
+                {
+                    "code": "GP",
+                    "seats" : 6
+                },
+                {
+                    "code": "PD",
+                    "seats" : 2
+                }
+            ],
+            "oppositionParties":
+            [
+                {
+                    "code": "FG",
+                    "seats" : 51 
+                },
+                {
+                    "code": "SF",
+                    "seats" : 4
+                },
+                {
+                    "code": "L",
+                    "seats" : 20
+                },
+                {
+                    "code": "O",
+                    "seats" : 5
+                }
+            ]
+        },
+        {
+            "year":   1977,
+            "governmentParties":   
+            [
+                {
+                    "code": "FF",
+                    "seats" : 84
+                }
+            ],
+            "oppositionParties":
+            [
+                {
+                    "code": "O",
+                    "seats" : 4
+                },
+                {
+                    "code": "FG",
+                    "seats" : 43
+                },
+                {
+                    "code": "L",
+                    "seats" : 17
+                }
+            ]
+        }
+    ],
+            
+    "parties":
+    [
+        {
+            "name": "Fine Gael",
+            "code": "FG",
+            "colour": "#0087c3"
+        },
+        {
+            "name": "Labour",
+            "code" : "L",
+            "colour": "#BF1D24"
+        },
+        {
+            "name": "Fianna Fáil",
+            "code" : "FF",
+            "colour": "#92D17D"
+        },
+        {
+            "name": "Sinn Féin",
+            "code" : "SF",
+            "colour": "#299131"
+        },
+        {
+            "name": "Others",
+            "code" : "O",
+            "colour": "gret"
+        },
+        {
+            "name": "Socialist Party",
+            "code" :"SP",
+            "colour": "green"
+        },
+        {
+            "name": "People Before Profit",
+            "code" : "PBP",
+            "colour": "green"
+        },
+        {
+            "name": "Progressive Democrats",
+            "code" : "PD",
+            "colour": "black"
+        },
+        {
+            "name": "Green Party",
+            "code" : "GP",
+            "colour": "orange"
+        }
+    ]
+}
